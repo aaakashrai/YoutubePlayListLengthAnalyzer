@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void reset(){
         time.setText("");
+        DataPack.counter=0;
         rc.setAdapter(new ItemAdaptor(new ArrayList<DataPack>()));
         ans=0;
     }
