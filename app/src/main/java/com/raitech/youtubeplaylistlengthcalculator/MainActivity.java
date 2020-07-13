@@ -4,7 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.ActivityNotFoundException;
 import android.content.ClipData;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -52,11 +56,11 @@ public class MainActivity extends AppCompatActivity {
         rc.addOnItemTouchListener(
                 new RecyclerItemClickListener(MainActivity.this, rc ,new RecyclerItemClickListener.OnItemClickListener() {
                     @Override public void onItemClick(View view, int position) {
-                        Toast.makeText(MainActivity.this, ((EditText)view.findViewById(R.id.videourl)).getText().toString(), Toast.LENGTH_SHORT).show();
+                        watchYoutubeVideo(MainActivity.this, ((EditText)view.findViewById(R.id.videourl)).getText().toString());
                     }
 
                     @Override public void onLongItemClick(View view, int position) {
-                        // do whatever 
+                        Toast.makeText(MainActivity.this, ((EditText)view.findViewById(R.id.videourl)).getText().toString(), Toast.LENGTH_SHORT).show();
                     }
                 })
         );
@@ -72,6 +76,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+    }
+
+    public void watchYoutubeVideo(Context context, String id){
+        Intent appIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(id));
+        Intent webIntent = new Intent(Intent.ACTION_VIEW,
+                Uri.parse(id));
+        try {
+            context.startActivity(appIntent);
+        } catch (ActivityNotFoundException ex) {
+            context.startActivity(webIntent);
+        }
     }
 
 }
