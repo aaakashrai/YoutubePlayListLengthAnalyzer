@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 
@@ -47,7 +49,17 @@ public class MainActivity extends AppCompatActivity {
                 turn=1;
             }
         });
+        rc.addOnItemTouchListener(
+                new RecyclerItemClickListener(MainActivity.this, rc ,new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override public void onItemClick(View view, int position) {
+                        Toast.makeText(MainActivity.this, ((EditText)view.findViewById(R.id.videourl)).getText().toString(), Toast.LENGTH_SHORT).show();
+                    }
 
+                    @Override public void onLongItemClick(View view, int position) {
+                        // do whatever 
+                    }
+                })
+        );
     }
 
     private void reset(){

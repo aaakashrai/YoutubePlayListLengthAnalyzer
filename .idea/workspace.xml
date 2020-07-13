@@ -12,17 +12,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b43d29f-efc3-428a-a298-664cc11b7ddf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/raitech/youtubeplaylistlengthcalculator/RecyclerItemClickListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/raitech/youtubeplaylistlengthcalculator/ItemAdaptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/raitech/youtubeplaylistlengthcalculator/ItemAdaptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/raitech/youtubeplaylistlengthcalculator/ListViewHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/raitech/youtubeplaylistlengthcalculator/ListViewHolder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/raitech/youtubeplaylistlengthcalculator/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/raitech/youtubeplaylistlengthcalculator/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/listelement.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/listelement.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_29" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="35d41d54" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -140,10 +154,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="573" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1594582898764">
+    <state x="573" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1594644325346">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="573" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1594582898764" />
+    <state x="573" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1594644325346" />
     <state x="430" y="144" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594202743049">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -152,22 +166,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="280" y="152" key="AndroidCreateResourceFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1594574325602" />
-    <state width="1489" height="299" key="GridCell.Tab.0.bottom" timestamp="1594584016336">
+    <state width="1489" height="276" key="GridCell.Tab.0.bottom" timestamp="1594644465040">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1489" height="299" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1594584016336" />
-    <state width="1489" height="299" key="GridCell.Tab.0.center" timestamp="1594584016336">
+    <state width="1489" height="276" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1594644465040" />
+    <state width="1489" height="276" key="GridCell.Tab.0.center" timestamp="1594644465039">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1489" height="299" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1594584016336" />
-    <state width="1489" height="299" key="GridCell.Tab.0.left" timestamp="1594584016335">
+    <state width="1489" height="276" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1594644465039" />
+    <state width="1489" height="276" key="GridCell.Tab.0.left" timestamp="1594644465038">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1489" height="299" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1594584016335" />
-    <state width="1489" height="299" key="GridCell.Tab.0.right" timestamp="1594584016336">
+    <state width="1489" height="276" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1594644465038" />
+    <state width="1489" height="276" key="GridCell.Tab.0.right" timestamp="1594644465039">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1489" height="299" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1594584016336" />
+    <state width="1489" height="276" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1594644465039" />
     <state width="719" height="263" key="GridCell.Tab.1.bottom" timestamp="1594566983553">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -196,10 +210,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="100" y="100" width="1200" height="596" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1536.834@0.0.1536.834" timestamp="1594562251219" />
-    <state x="395" y="221" key="com.intellij.ide.util.TipDialog" timestamp="1594628918943">
+    <state x="395" y="221" key="com.intellij.ide.util.TipDialog" timestamp="1594643285330">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="395" y="221" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1594628918943" />
+    <state x="395" y="221" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1594643285330" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1594644546718">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1594644546718" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1594573623789">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

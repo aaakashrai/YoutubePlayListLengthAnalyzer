@@ -36,9 +36,9 @@ public class ItemAdaptor extends
         holder.getDur().setText(data.get(position).getLength());
         holder.getPos().setText(data.get(position).getPos() + "");
         holder.getName().setText(data.get(position).getName());
-        //holder.getImg().setImageResource(R.mipmap.ic_launcher);
         Picasso.get().load(data.get(position).getImageurl()).into(holder.getImg());
         holder.getImg().setScaleType(ImageView.ScaleType.CENTER_CROP);
+        holder.getVideourl().setText(data.get(position).getVideourl());
     }
 
     @Override

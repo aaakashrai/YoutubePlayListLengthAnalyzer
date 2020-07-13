@@ -1,6 +1,7 @@
 package com.raitech.youtubeplaylistlengthcalculator;
 
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -10,6 +11,17 @@ public class ListViewHolder extends RecyclerView.ViewHolder {
 
     private TextView pos;
     private ImageView img;
+    private TextView name;
+    private TextView dur;
+    private EditText videourl;
+
+    public EditText getVideourl() {
+        return videourl;
+    }
+
+    public void setVideourl(EditText videourl) {
+        this.videourl = videourl;
+    }
 
     public TextView getPos() {
         return pos;
@@ -27,8 +39,7 @@ public class ListViewHolder extends RecyclerView.ViewHolder {
         return dur;
     }
 
-    private TextView name;
-    private TextView dur;
+
 
     public ListViewHolder(View view){
         super(view);
@@ -36,5 +47,6 @@ public class ListViewHolder extends RecyclerView.ViewHolder {
         img= view.findViewById(R.id.imagesrc);
         name= view.findViewById(R.id.name);
         dur = view.findViewById(R.id.length);
+        videourl= view.findViewById(R.id.videourl);
     }
 }
