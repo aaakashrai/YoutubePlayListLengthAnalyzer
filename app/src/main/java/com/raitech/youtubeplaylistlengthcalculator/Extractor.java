@@ -67,7 +67,8 @@ public class Extractor {
         Log.v("INFOOO", "TRYING");
         Elements e= doc.getElementsByClass("pl-video-title");
         int i=0;
-        data= new ArrayList<>();
+        if(data.size()!=0)
+                data= new ArrayList<>();
         for(Element x : e){
             DataPack t= new DataPack();
             t.setName(x.text());

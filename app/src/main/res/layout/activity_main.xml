@@ -29,7 +29,7 @@
         android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="76"/>
+        android:layout_weight="90"/>
 
     <TextView
         android:id="@+id/editTextTime"
