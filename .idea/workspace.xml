@@ -20,9 +20,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/raitech/youtubeplaylistlengthcalculator/Displayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/raitech/youtubeplaylistlengthcalculator/Displayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/raitech/youtubeplaylistlengthcalculator/Extractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/raitech/youtubeplaylistlengthcalculator/Extractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/raitech/youtubeplaylistlengthcalculator/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/raitech/youtubeplaylistlengthcalculator/MainActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +224,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/raitech/youtubeplaylistlengthcalculator/Extractor.java</url>
-          <line>74</line>
+          <line>75</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
