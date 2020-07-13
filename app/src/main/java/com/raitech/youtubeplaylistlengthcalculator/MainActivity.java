@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     EditText edt;
     TextView time;
     Displayer dis;
+    List<DataPack> data;
     long ans;
     int turn=0;
     @Override
@@ -42,14 +43,16 @@ public class MainActivity extends AppCompatActivity {
         time= findViewById(R.id.editTextTime);
         final RequestQueue rq = Volley.newRequestQueue(this);
         dis= new Displayer(rc,time);
+        final Extractor[] ex = new Extractor[1];
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(turn==1)
                     reset();
                 String url=edt.getText().toString()+"&disable_polymer=true";
-                Extractor ex=  new Extractor(url,rq, dis);
-                ex.Requester();
+                ex[0] =  new Extractor(url,rq, dis);
+                ex[0].Requester();
+                data= ex[0].getData();
                 turn=1;
             }
         });
@@ -60,7 +63,10 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     @Override public void onLongItemClick(View view, int position) {
-                        Toast.makeText(MainActivity.this, ((EditText)view.findViewById(R.id.videourl)).getText().toString(), Toast.LENGTH_SHORT).show();
+                        data.remove(position);
+                        dis.getAdapt().notifyItemRemoved(position);
+                        dis.getAdapt().notifyItemRangeChanged(position, data.size());
+                        time.setText(ex[0].totalSize());
                     }
                 })
         );

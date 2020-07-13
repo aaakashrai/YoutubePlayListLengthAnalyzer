@@ -11,6 +11,7 @@ public class Displayer {
     List<DataPack> data;
     private RecyclerView rc;
     private TextView time;
+    ItemAdaptor adapt;
     public Displayer(RecyclerView tx, TextView ti){
             rc= tx;
             time=ti;
@@ -21,9 +22,12 @@ public class Displayer {
     }
 
     public void display(String tim){
-        rc.setAdapter(new ItemAdaptor(data));
+        adapt= new ItemAdaptor(data);
+        rc.setAdapter(adapt);
         time.setText("Total time: "+ data.size()+"  "+tim);
     }
 
-
+    public ItemAdaptor getAdapt() {
+        return adapt;
+    }
 }

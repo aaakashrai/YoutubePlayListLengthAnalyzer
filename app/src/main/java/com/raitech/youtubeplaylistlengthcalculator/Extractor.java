@@ -16,7 +16,10 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class Extractor {
     private String url;
@@ -55,20 +58,25 @@ public class Extractor {
 
     }
 
+    public List<DataPack> getData() {
+        return data;
+    }
+
     private void infoGetter(String s){
         Document doc= Jsoup.parse(s);
         Log.v("INFOOO", "TRYING");
-        Elements e= doc.getElementsByClass("timestamp");
-        for(Element x : e){
-            DataPack t= new DataPack();
-            t.setLength(x.text());
-            data.add(t);
-        }
-        e= doc.getElementsByClass("pl-video-title");
+        Elements e= doc.getElementsByClass("pl-video-title");
         int i=0;
         for(Element x : e){
-            DataPack t= data.get(i);
+            DataPack t= new DataPack();
             t.setName(x.text());
+            data.add(t);
+        }
+        e= doc.getElementsByClass("timestamp");
+        i=0;
+        for(Element x : e){
+            DataPack t= data.get(i);
+            t.setLength(x.text());
             data.set(i,t);
             i++;
         }
@@ -104,17 +112,7 @@ public class Extractor {
     String totalSize(){
         long ans=0;
         for(DataPack x: data){
-            String f[]=x.getLength().split(":");
-        long contribution=0;
-        if(f.length==1)
-            contribution= Integer.parseInt(f[0]);
-        if(f.length==2)
-            contribution = Integer.parseInt(f[0])*60+ Integer.parseInt(f[1]);
-        else{
-            contribution = Integer.parseInt(f[0])*3600+Integer.parseInt(f[1])*60+ Integer.parseInt(f[2]);
-        }
-        //Toast.makeText(this, contribution+" "+i, Toast.LENGTH_SHORT).show();
-            ans += contribution;
+            ans += timefromstrtolong(x);
         }
         long hour= ans/3600;
         long min= (ans%3600)/60;
@@ -129,5 +127,18 @@ public class Extractor {
             respstring+="0"+sec;
         else respstring+=sec+"";
         return respstring;
+    }
+
+    long timefromstrtolong(DataPack x){
+        String f[]=x.getLength().split(":");
+        long contribution=0;
+        if(f.length==1)
+            contribution= Integer.parseInt(f[0]);
+        if(f.length==2)
+            contribution = Integer.parseInt(f[0])*60+ Integer.parseInt(f[1]);
+        else{
+            contribution = Integer.parseInt(f[0])*3600+Integer.parseInt(f[1])*60+ Integer.parseInt(f[2]);
+        }
+        return contribution;
     }
 }
